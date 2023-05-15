@@ -1,15 +1,25 @@
-import React from 'react'
-
-const App = () => {
-  return (
-    <div>App</div>
-  )
+import './App.css';
+import Header from './components/header/Header'
+import Navbar from './components/navbar/Navbar'
+import About from './components/about/About'
+import Experience from './components/experience/Experience'
+import Services from './components/services/Services'
+import Portfolio from './components/portfolio/Portfolio'
+import Testimonial from './components/testimonial/Testimonial'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
+function App() {
+return (
+<>
+    <Header/>
+    <Navbar/>
+    <About/>
+    <Experience/>
+    <Services/>
+    <Portfolio/><Testimonial/>
+    <Contact/>
+    <Footer/>
+</>
+);
 }
-
-export default App 
-
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-reactDom.render(<APP/> , document.getElementById('root')); //THIS LINE INDICATE THAT
-// ALL THE CONTENT OF THIS FILE SHOULD BE RENDERED IN THE ROOT ID OF THE HTML FILE
+export default App;
