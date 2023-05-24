@@ -12,6 +12,5 @@ A Portfolio Website built with React given as a project assessment in school
 ![Screenshot (377)](https://github.com/YannKamche/Portfolio/assets/122357201/b32da2bc-b461-4f5c-a7e1-a4331d351f0b)
 ![Screenshot (378)](https://github.com/YannKamche/Portfolio/assets/122357201/e4b9a9d0-42b6-4d0c-8ad9-d8bf0a3c40d5)
 ![Screenshot (379)](https://github.com/YannKamche/Portfolio/assets/122357201/a072af3b-673c-46fa-8c6b-c8f33c5d932a)
-![Screenshot (380)]
 ![Screenshot (381)](https://github.com/YannKamche/Portfolio/assets/122357201/4efaad03-9618-40d0-a2d7-53ea19863ee7)
 
