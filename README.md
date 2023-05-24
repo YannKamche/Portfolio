@@ -1,6 +1,4 @@
-#### NAME: KAMCHE YANN ARNAUD
-### MATRICULE: FE21A208
-A Portfolio Website built with React given as a project assessment in school
+#### NAME: KAMCHE YANN ARNAUD FE21A208
 ![Screenshot (373)](https://github.com/YannKamche/Portfolio/assets/122357201/a6f230be-cc5f-4114-8663-53720903cc0a)
 ![Screenshot (374)](https://github.com/YannKamche/Portfolio/assets/122357201/04747bf2-a7b4-48bc-adaf-91e5875b5315)
 ![Screenshot (375)](https://github.com/YannKamche/Portfolio/assets/122357201/229973d8-2d85-47d6-b7ab-5b26259f4bad)
