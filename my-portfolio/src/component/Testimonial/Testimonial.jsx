@@ -1,10 +1,8 @@
-import React from "react";
-import "./testimonial.css";
-import AVTRI from '../../assets/img.jpg'
-import AVTRI1 from "../../assets/img.jpg";
-import AVTRI2 from "../../assets/img.jpg";
-import AVTRI3 from "../../assets/img.jpg";
-
+import React from 'react'
+import './testimonial.css'
+import T1 from '../../assets/img.jpg'
+import T2 from '../../assets/img.jpg'
+import T3 from '../../assets/img.jpg'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
@@ -13,75 +11,76 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-
 import 'swiper/css/pagination';
 
 
+const data = [
+    {
+      id: 1,
+      review:
+        "Working with Yann Kamche has been such an amazing journey. He is commited to the work and always deliver in time",
+      avatar: T1,
+      name: "Mbo Valentine",
+    },
+    {
+      id: 2,
+      review:
+        "Yann Kamche is the best frontend developer I have ever worked with",
+      avatar: T2,
+      name: "Mbah Elsie",
+    },
+    {
+      id: 3,
+      review:
+        "Working with Yann Kamche has been really awesome. He is always prompt deliver high quality services and he always deliver",
+      avatar: T3,
+      name: "Arrah Mbone",
+    },
+    {
+      id: 4,
+      review:
+        "Working with Kamche Yann as my assistant Junior Frontend Development has really doubed my productivity",
+      avatar: T2,
+      name: "Njang Elsie",
 
-const testimonial = () => {
+    },
+  ];
+
+const Testimonial = () => {
   return (
-    <section id="testimonial">
-      <h5>Review from Clients</h5>
+    <section id='testimonials'>
+      <h5>review from Clients</h5>
       <h2>Testimonials</h2>
 
-      <Swiper className="container testimonials__container">
-        {/*modules={[Pagination]}
-        spaceBetween={40}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}*/}
-        <SwiperSlide className="testimonial">
+      <Swiper className="container testimonials__container"
+       // install Swiper modules
+      modules={[Pagination]}
+      spaceBetween={40}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      >
+        {
+          data.map(({avatar, name, review}, index) => {
+          return(
+         
+        <SwiperSlide  key={index} className="testimonial">
           <div className="client__avatar">
-            <img src={AVTRI} alt="avatar" />
-          </div>
-          <h5 className="client__name">George</h5>
-          <small className="client__review">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, qui
-            dolorum! Quisquam, minima debitis! Dolorum officiis dolores iste
-            quos quae minus, voluptatem est dolor, vel accusamus nam expedita.
-            Id, molestiae!
-          </small>
+            <img src={avatar}/>
+         </div>
+            <h5 className='client__name'>{name}</h5>
+            <small className='client__review'>
+            {review}
+            </small>
+          
         </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTRI1} alt="avatar" />
-          </div>
-          <h5 className="client__name">George</h5>
-
-          <small className="client__review">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, qui
-            dolorum! Quisquam, minima debitis! Dolorum officiis dolores iste
-            quos quae minus, voluptatem est dolor, vel accusamus nam expedita.
-            Id, molestiae!
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTRI2} alt="avatar" />
-          </div>
-          <h5 className="client__name">George</h5>
-          <small className="client__review">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, qui
-            dolorum! Quisquam, minima debitis! Dolorum officiis dolores iste
-            quos quae minus, voluptatem est dolor, vel accusamus nam expedita.
-            Id, molestiae!
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTRI3} alt="avatar" />
-          </div>
-          <h5 className="client__name">George</h5>
-          <small className="client__review">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, qui
-            dolorum! Quisquam, minima debitis! Dolorum officiis dolores iste
-            quos quae minus, voluptatem est dolor, vel accusamus nam expedita.
-            Id, molestiae!
-          </small>
-        </SwiperSlide>
+          )
+           })
+         
+         }
+        
       </Swiper>
     </section>
-  );
-};
-export default testimonial;
+  )
+}
+
+export default Testimonial

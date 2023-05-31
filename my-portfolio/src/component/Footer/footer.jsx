@@ -1,19 +1,20 @@
 import React from 'react'
-import './footer.css'
-import { FaFacebookF } from 'react-icons/fa';
-import { FiInstagram } from 'react-icons/fi';
-import {IoLogoTwitter} from 'react-icons/io'
+import { BsLinkedin } from 'react-icons/bs';
+import {FaGithub} from 'react-icons/fa'
+import {FaFacebookF} from 'react-icons/fa'
+import { CgTwitter } from "react-icons/cg";
 
+import './footer.css'
 const Footer = () => {
     return (
-      <footer>
+      <div className="footer__container">
         <a href="#" className="footer__logo">
-          BELLE
+          Nyando Onongwene
         </a>
 
         <ul className="permalinks">
           <li>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -28,23 +29,33 @@ const Footer = () => {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#testimonials">testimonials</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
 
-        <div className="footer__socials">
-          <a href="https://facebook.com"><FaFacebookF /></a>
-          <a href="https://instagram.com"><FiInstagram /></a>
-          <a href="https://twitter.com"><IoLogoTwitter /></a>
+        <div className="footer__media">
+          <a href="https://linkedin.com" target="blank">
+            <BsLinkedin />
+          </a>
+          <a href="https://github.com" target="blank">
+            <FaGithub />
+          </a>
+          <a href="https://facebook.com" target="blank">
+            <FaFacebookF />
+          </a>
+          <a href="https://twitter.com" target="blank">
+            <CgTwitter />
+          </a>
         </div>
 
-        <div className='footer__copyright'>
-            <small> &copy; designed by Yann, All rights reserved</small>
+        <div className="copyRight">
+            <h3>@copyright Nyando 2023</h3>
         </div>
-      </footer>
+      </div>
     );
 }
+
 export default Footer
