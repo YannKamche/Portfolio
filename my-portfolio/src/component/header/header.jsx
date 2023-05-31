@@ -18,7 +18,7 @@ return (
 <div className='my_image'>
 
 
- <img src= {me} alt="Nyando" />
+ <img src= {me} alt="Yann kamche" />
 
 </div>
 <a href='#contact' className='scroll__down'>Scroll down</a>
