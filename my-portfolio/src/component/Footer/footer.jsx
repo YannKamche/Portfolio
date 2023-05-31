@@ -9,7 +9,7 @@ const Footer = () => {
     return (
       <div className="footer__container">
         <a href="#" className="footer__logo">
-          Nyando Onongwene
+          Yann Kamche
         </a>
 
         <ul className="permalinks">
@@ -40,19 +40,19 @@ const Footer = () => {
           <a href="https://linkedin.com" target="blank">
             <BsLinkedin />
           </a>
-          <a href="https://github.com" target="blank">
+          <a href="https://github.com/YannKamche" target="blank">
             <FaGithub />
           </a>
           <a href="https://facebook.com" target="blank">
             <FaFacebookF />
           </a>
-          <a href="https://twitter.com" target="blank">
+          <a href="https://twitter.com/YannKamche" target="blank">
             <CgTwitter />
           </a>
         </div>
 
         <div className="copyRight">
-            <h3>@copyright Nyando 2023</h3>
+            <h3>@copyright Yann 2023</h3>
         </div>
       </div>
     );

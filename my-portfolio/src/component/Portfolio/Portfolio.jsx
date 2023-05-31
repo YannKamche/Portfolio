@@ -23,6 +23,25 @@ const Portfolio = () => {
 
          <article className='portfolio__item'>
           <div className="portfolio__item-image">
+            <img src={Portfolio4} alt="Glassmorphic Bank card" />
+          </div>
+          <h3>This is a portfolio item title</h3>
+          <a href="https://githup.com" className='btn'>Github</a>
+          <a href="https://githup.com/YannKamche/" className='btn btn-primary' target='_blank'>Live Demo</a>
+         </article>
+
+
+         <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={Portfolio2} alt="Glassmorphic Bank card" />
+          </div>
+          <h3>This is a portfolio item title</h3>
+          <a href="https://githup.com" className='btn'>Github</a>
+          <a href="https://githup.com/YannKamche/" className='btn btn-primary' target='_blank'>Live Demo</a>
+         </article>
+
+         <article className='portfolio__item'>
+          <div className="portfolio__item-image">
             <img src={Portfolio3} alt="Clothing Website" />
           </div>
           <h3>This is a portfolio item title</h3>
