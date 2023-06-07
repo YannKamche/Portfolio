@@ -86,6 +86,7 @@
 
 .text{
     padding: 25px 25px 25px 0px;
+    text-align: center;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
@@ -100,6 +101,7 @@
     }
     .about__content p{
         margin: 1rem 0 1.5rem;
+      
     }
 }
 /* MEDIA QUERIES (SMALL DEVICES) */
